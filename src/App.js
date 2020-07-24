@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import ClassComponent from './components/ClassComponent';
 import HooksComponent from './components/useState/HooksComponent';
-import Counter from './components/useState/Counter';
+import PrevState from './components/useState/PrevState';
 import HooksObjects from './components/useState/HooksObjects';
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
           <ClassComponent />
           <p>&#47;&#47; this section is written in Functional Component using &#123; useState &#125;</p>
           <HooksComponent />
-          <Counter />
+          <PrevState />
           <HooksObjects />
         </div>
       </div>

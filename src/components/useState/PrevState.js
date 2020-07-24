@@ -3,6 +3,8 @@ import React, { useState } from 'react'
 function HooksCounterTwo() {
     const initialCount = 0
     const [count, setCount] = useState(initialCount)
+    // count is the current value of state variable
+    // setCount is a method that can update the state variable
 
     const incrementByFive = () => {
         for (let i = 0; i < 5; i++) {
