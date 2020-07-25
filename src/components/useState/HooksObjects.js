@@ -4,20 +4,31 @@ function HooksObjects() {
     const resetName = ''
     const [name, setName] = useState({ firstName: '', lastName: '' })
     return (
-        <form>
-            <input
-                type="text"
-                value={name.firstName}
-                onChange={e => setName({ ...name, firstName: e.target.value })}
-            />
-            <input
-                type="text"
-                value={name.lastName}
-                onChange={e => setName({ ...name, lastName: e.target.value })}
-            />
-            <h3>Your first name is {name.firstName}</h3>
-            <h3>Your last name is {name.lastName}</h3>
-            <button onClick={() => setName(resetName)}>Reset Name</button>
+        <form className="form">
+            <div>
+                <p>First name</p>
+                <input
+                    type="text"
+                    className="input"
+                    maxlength="30"
+                    value={name.firstName}
+                    onChange={e => setName({ ...name, firstName: e.target.value })}
+                />
+            </div>
+            <div>
+                <p>Last name</p>
+                <input
+                    type="text"
+                    className="input"
+                    maxlength="30"
+                    value={name.lastName}
+                    onChange={e => setName({ ...name, lastName: e.target.value })}
+                />
+            </div>
+            <div>
+                <h3>{name.firstName} {name.lastName}</h3>
+            </div>
+            <button className="reset-button" onClick={() => setName(resetName)}>Reset Name</button>
         </form>
     )
 }

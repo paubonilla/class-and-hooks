@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  background: #292c35;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  width: 200px;
+  outline: none;
+}
+
+.reset-button {
+  width: 100px;
+}

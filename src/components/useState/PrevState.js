@@ -13,7 +13,7 @@ function HooksCounterTwo() {
     }
     return (
         <div>
-            Count: {count}
+            <p>Count: {count}</p>
             <button onClick={() => setCount(initialCount)}>Reset</button>
             <button onClick={() => setCount(prevCount => prevCount + 1)}>Add</button>
             <button onClick={() => setCount(prevCount => prevCount - 1)}>Minus</button>
